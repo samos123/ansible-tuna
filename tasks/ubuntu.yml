@@ -1,0 +1,5 @@
+---
+- name: Enable tuna repository for trusty
+  template: src=sources.list.j2 dest=/etc/apt/sources.list
+  notify: apt-get update
+
